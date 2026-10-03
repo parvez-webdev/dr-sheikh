@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/aos.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>Dr.Sheikh Marufuzzaman</title>
+</head>
+<body>
+    <!---------------------header start ------------------->
+    <header>
+        <nav class="navbar navbar-expand-lg d-none d-lg-block" id="dr-nav">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center "href="#"><img src="./assets/images/logo.png" alt="Dr.Sheikh Marufuzzaman"class="doctor-logo">
+                    <div class="doctor-name">
+                        <p>Dr. Sheikh Marufuzzaman <br><span>Consultant Cardiologist</span></p>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="dr-ul">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Hero">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Locations">Locations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#con">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#Appointment">
+                    <button type="submit">Book Apponintment </button>
+                </a>
+            </div>
+        </nav>
+        <div class="mdheader d-lg-none">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-2">
+                        <a href="#">
+                            <img src="./assets/images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-8" id="dr-name">
+                        <p>Dr. Sheikh Marufuzzaman</p>
+                    </div>
+                    <div class="col-2" id="icon">
+                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"><i class="bi bi-list"></i></a>
+                    </div>
+                    <!-------------- canvas ------------->
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <div class="menu-profile">
+                                <img src="./assets/images/hero.png" alt="Dr. Sheikh Marufuzzaman">
+                                <h5>Dr. Sheikh Marufuzzaman</h5>
+                                <p>Consultant Cardiologist</p>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="menu">
+                                <ul>
+                                    <li>
+                                        <a href="#Hero" class="menu-icon d-flex"><i class="bi bi-house-heart-fill"></i> <span>Home</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#About" class="menu-icon d-flex"><i class="bi bi-person-fill"></i> <span>About</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#Services" class="menu-icon d-flex"><i class="bi bi-heart-pulse-fill"></i>
+                                            <span>Services</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#Locations" class="menu-icon d-flex"><i class="bi bi-geo-alt-fill"></i> <span>Locations</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#contact" class="menu-icon d-flex"><i class="bi bi-telephone"></i> <span>Contact</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!---------------------header end --------------------->
+    <main>
+        <!----------------- Hero section start ---------------->
+        <section class="hero" id="Hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6" id="content">
+                        <h6>HEALTHY HEART <span>.</span> BETTER TOMORROW</h6>
+                        <h1>Dr. Sheikh Marufuzzaman</h1>
+                        <p class="skl">
+                            MBBS, BCS (Health),MD (Cardiology)
+                        </p>
+                        <p class="pos">
+                            Assistant Professor, Department of Cardiology
+                        </p>
+                        <p class="sam">
+                            Dr. Sheikh Marufuzzaman provides cardiac consultation and care for patients with various heart-related problems
+                            in Cumilla. 
+                            <span id="d-text">
+                            He focuses on understanding each patient's condition and recommending the right treatment and
+                            guidance.
+                            </span> 
+                        </p>
+                        <div class="btn-box">
+                            <button >Book Apponintment </button>
+                            <button>
+                                <a href="tel:+8801818410710">Call Now <i class="bi bi-telephone-fill"></i></a>
+                            </button>
+                        </div>
+                        <div class="location d-lg-block d-lg-flex d-none">
+                            <p>
+                                <a href="#">
+                                    <i class="bi bi-geo-alt" id="loc">
+                                    </i>
+                                    Moon Hospital
+                                    <br>Comilla
+                                </a>
+                            </p>
+                            <p>
+                                <a href="#">
+                                    <i class="bi bi-clock-history" id="loc"></i>
+                                    Sat - Thu
+                                    <br>5pm to 8pm
+                                </a>
+                            </p>
+                            <p>
+                                <a href="tel:+8801818410710">
+                                    <i class="bi bi-telephone-forward" id="loc"></i>
+                                    +880 1818-410710<br>Call for Appointment
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" id="images">
+                        <a href="#">
+                            <img src="./assets/images/hero.png" alt="Dr. Sheikh Marufuzzaman">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------ Hero section end ----------------->
+        <!------------------ about sestion start -------------->
+        <section class="about" id="About">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5" id="image">
+                        <a href="#">
+                            <img src="./assets/images/about-doctor.png" alt="About-Doctor">
+                        </a>
+                    </div>
+                    <div class="col-lg-7" id="abo-cont">
+                        <h1>About Me</h1>
+                        <p>
+                            Dr. Sheikh Marufuzzaman is a Cardiologist with over 40 years of experience in cardiovascular care. He completed his MBBS and MD in Cardiology and currently serves as an Associate Professor of Cardiology at Cumilla Medical College & Hospital.    
+                        </p>
+                        <button id="view">
+                            More About Me<i class="bi bi-arrow-right-short" id="arrow"></i>
+                        </button>
+                        <div class="icon-box d-flex align-items-center">
+                            <a href="#">
+                                <i class="bi bi-calendar2-week" id="icon-dg"></i>40+ Years <br>Experience
+                            </a>
+                            
+                            <a href="#">
+                                <i class="bi bi-mortarboard-fill" id="icon-dg"></i>MD (Cardiology) <br>Specialized Training
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-geo-alt" id="icon-dg"></i>Cumilla Medical <br>College & Hospital
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------ about sestion end ---------------->
+        <!------------------ services sestion start ----------->
+        <section class="services" id="Services">
+            <div class="container">
+                <div class="head-text">
+                    <h6>MY SERVICES</h6>
+                    <h2>Expert Cardiac Care <span>& Treatment</span> </h2>
+                    <p>Personalized care focused on your heart health and well-being.</p>
+                </div>
+                <div class="row g-3">
+                    <div class="col-lg-4 col-md-6 card-item">
+                        <div class="card">
+                            <a href="#">
+                                <img src="./assets/images/card-1.jpg" alt="">
+                            </a>
+                            <h5>Cardiac Consultaion</h5>
+                            <p>Get expert advice and accurate diagnosis for your heart health from an expeienced cardiologist.</p>
+                            <div class="in-box">
+                                <a href="#">
+                                Learn More <i class="bi bi-arrow-right-short" id="arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 card-item">
+                        <div class="card">
+                            <a href="#">
+                                <img src="./assets/images/images_edited.jpg" id="sav-img" alt="">
+                            </a>
+                            <h5>Hypertension Management</h5>
+                            <p>Personalized care to keep your blood pressure under control and reduce future risks.</p>
+                            <div class="in-box">
+                                <a href="#">
+                                Learn More <i class="bi bi-arrow-right-short" id="arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 card-item">
+                        <div class="card">
+                            <a href="#">
+                                <img src="./assets/images/hart atck_.jpg" alt="">
+                            </a>
+                            <h5>Heart Attack Management</h5>
+                            <p>Follow-up care, lifestyle guidance and long-term management after a heart attack to protect your heart health.</p>
+                            <div class="in-box">
+                                <a href="#">
+                                Learn More <i class="bi bi-arrow-right-short" id="arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 card-item">
+                        <div class="card">
+                            <a href="#">
+                                <img src="./assets/images/coronary.jpg" alt="">
+                            </a>
+                            <h5>Coronary Heart Disease Care</h5>
+                            <p>Focused treatment and long-term management for safer and healthier heart function.</p>
+                            <div class="in-box">
+                                <a href="#">
+                                Learn More <i class="bi bi-arrow-right-short" id="arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 card-item">
+                        <div class="card">
+                            <a href="#">
+                                <img src="./assets/images/heart.jpeg" id="sav-img">
+                            </a>
+                            <h5>Heart Rhythm Disorders</h5>
+                            <p>Advanced evaluation and treatment for irregular heartbeats and rhythm related conditions.</p>
+                            <div class="in-box">
+                                <a href="#">
+                                Learn More <i class="bi bi-arrow-right-short" id="arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 card-item">
+                        <div class="card">
+                            <a href="#">
+                                <img src="./assets/images/images.jpeg" alt="">
+                            </a>
+                            <h5>Heart Failure Management</h5>
+                            <p>Continuous care and monitoring to improve heart function and enhance your quality of life.</p>
+                            <div class="in-box">
+                                <a href="#">
+                                Learn More <i class="bi bi-arrow-right-short" id="arrow"></i>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!------------------ services sestion end ------------->
+        <!------------------ review sestion start ------------->
+        <section class="my-patients">
+            <div class="container">
+                <div class="my-re">
+                    <h2>What <span>My Patients</span></h2>
+                    <p>Real stories from people who trusted my care.</p>
+                </div>
+                <div class="review-slider">
+                    <div class="review-item">
+                        <div class="review-card">
+                            <iframe src="https://www.youtube.com/embed/LPJ7nRBepRk?enablejsapi=1" id="re-video" loading="lazy" frameborder="0"
+                                allowfullscreen>
+                            </iframe>
+                            <p>
+                                Dr. Sheikh Marufuzzaman is an excellent doctor. He listens carefully and gives the right advice.
+                                I'm really grateful for his support.
+                            </p>
+                            <div class="patient">
+                                <img src="./assets/images/owman.png" alt="Farida Rahman">
+                                <div>
+                                    <h6>Farida Rahman</h6>
+                                    <span>Patient</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <div class="review-card">
+                            <iframe src="https://www.youtube.com/embed/LPJ7nRBepRk?enablejsapi=1" id="re-video" loading="lazy" frameborder="0"
+                                allowfullscreen>
+                            </iframe>
+                            <p>Very professional and caring. I felt comfortable during my treatment. Highly recommended!</p>
+                            <div class="patient">
+                                <img src="./assets/images/man.jpeg" alt="Md. Rafiq Islam">
+                                <div>
+                                    <h6>Md. Rafiq Islam</h6>
+                                    <span>Patient</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <div class="review-card">
+                            <iframe src="https://www.youtube.com/embed/LPJ7nRBepRk?enablejsapi=1" id="re-video" loading="lazy" frameborder="0"
+                                allowfullscreen>
+                            </iframe>
+                            <p>His treatment and behaviour are both outstanding. I recovered much faster than I expected.</p>
+                            <div class="patient">
+                                <img src="./assets/images/owman.png" alt="Shanta Akter">
+                                <div>
+                                    <h6>Shanta Akter</h6>
+                                    <span>Patient</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <div class="review-card">
+                            <iframe src="https://www.youtube.com/embed/LPJ7nRBepRk?enablejsapi=1" id="re-video" loading="lazy" frameborder="0"
+                                allowfullscreen>
+                            </iframe>
+                            <p>Dr. Sheikh Marufuzzaman is an excellent doctor. He listens carefully and gives the right advice.
+                                I'm really grateful for his support.</p>
+                            <div class="patient">
+                                <img src="./assets/images/owman.png" alt="Farida Rahman">
+                                <div>
+                                    <h6>Farida Rahman</h6>
+                                    <span>Patient</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <div class="review-card">
+                            <iframe src="https://www.youtube.com/embed/LPJ7nRBepRk?enablejsapi=1" id="re-video" loading="lazy" frameborder="0"
+                                allowfullscreen>
+                            </iframe>
+                            <p>Very professional and caring. I felt comfortable during my treatment. Highly recommended!</p>
+                            <div class="patient">
+                                <img src="./assets/images/man.jpeg" alt="Md. Rafiq Islam">
+                                <div>
+                                    <h6>Md. Rafiq Islam</h6>
+                                    <span>Patient</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <div class="review-card">
+                            <iframe src="https://www.youtube.com/embed/LPJ7nRBepRk?enablejsapi=1" id="re-video" loading="lazy" frameborder="0"
+                                allowfullscreen>
+                            </iframe>
+                            id="re-video"
+                                frameborder="0" 
+                                loading="lazy"
+                            ></iframe>
+                            <p>His treatment and behaviour are both outstanding. I recovered much faster than I expected.</p>
+                            <div class="patient">
+                                <img src="./assets/images/owman.png" alt="Shanta Akter">
+                                <div>
+                                    <h6>Shanta Akter</h6>
+                                    <span>Patient</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <!------------------ review sestion end ---------------->
+        <!------------------ locations sestion start ------------->
+        <section class="locations" id="Locations">
+            <div class="container">
+                <div class="loc-head text-center">
+                    <h6>LOCATIONS</h6>
+                    <h2>Chamber &amp; Consultation Locations</h2>
+                    <p>Find the right location for your consultation.</p>
+                </div>
+                <div class="row g-4 align-items-stretch">
+                    <div class="col-lg-6">
+                        <div class="loc-card">
+                            <divl class="loc-top">
+                                <i cass="bi bi-geo-alt-fill"></i>
+                                <div>
+                                    <h4>Cumilla Medical College &amp; Hospital</h4>
+                                    <p>Cardiology Department</p>
+                                    <span>Cumilla, Bangladesh</span>
+                                </div>
+                            </divl>
+                            <div class="loc-bottom">
+                                <div>
+                                    <h6>Visiting Hours</h6>
+                                    <p>Sat – Thu | 4:00 PM – 7:00 PM</p>
+                                </div>
+                                <a href="https://www.google.com/maps?q=Cumilla+Medical+College+Hospital" target="_blank"
+                                    class="loc-link">Get Directions <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+        
+                        <div class="loc-card">
+                            <div class="loc-top">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <div>
+                                    <h4>Moon Hospital</h4>
+                                    <p>Outpatient Consultation Chamber</p>
+                                    <span>Cumilla, Bangladesh</span>
+                                </div>
+                            </div>
+                            <div class="loc-bottom">
+                                <div>
+                                    <h6>Visiting Hours</h6>
+                                    <p>Sat – Thu | 5:00 PM – 8:00 PM</p>
+                                </div>
+                                <a href="https://www.google.com/maps?q=Moon+Hospital+Cumilla" target="_blank"
+                                    class="loc-link">Get Directions <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-6">
+                        <div class="loc-map">
+                            <iframe src="https://www.google.com/maps?q=Cumilla+Medical+College+Hospital&output=embed"
+                                loading="lazy" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------ locations sestion end --------------->
+        <section class="appointment" id="Appointment">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-5 appt-heading">
+                        <span class="apt-badge"><i class="bi bi-calendar-check"></i> Book an Appointment</span>
+                        <h2>Take the First Step<br>Towards Better Health</h2>
+                        <p>Fill out the form below to book your appointment. I'll get back to you as soon as possible.</p>
+                        <div class="secure">
+                            <i class="bi bi-shield-check"></i> Your information is safe and secure
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-7">
+                        <form class="apt-card">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                  <label>Full Name <b>*</b></label>
+                                    <input type="text" placeholder="Your name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Phone Number <b>*</b></label>
+                                    <input type="tel" placeholder="01XXXXXXXXX" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label>Email (Optional)</label>
+                                    <input type="email" placeholder="you@example.com">
+                                </div>
+                                <div class="col-md-4">
+                                    <label>Preferred Date <b>*</b></label>
+                                    <input type="date" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label>Preferred Time <b>*</b></label>
+                                    <select required>
+                                        <option value="">Select time</option>
+                                        <option>5:00 PM</option>
+                                        <option>5:30 PM</option>
+                                        <option>6:00 PM</option>
+                                        <option>6:30 PM</option>
+                                        <option>7:00 PM</option>
+                                        <option>7:30 PM</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label>Message / Reason for Appointment <b>*</b></label>
+                                    <textarea rows="3" placeholder="Tell me about your health issue..." required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="apt-submit"><i class="bi bi-send"></i> Submit
+                                        Appointment</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-----------------------------footer start -------------------->
+        <footer class="footer" id="con">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <h4 class="f-logo">Dr. Sheikh Marufuzzaman</h4>
+                        <span class="f-role">Consultant Cardiologist</span>
+                        <p>Your heart health is my priority. I'm here to help you live a healthier, happier life.</p>
+                        <div class="f-social">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-whatsapp"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-3 col-md-6">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="#Hero">Home</a></li>
+                            <li><a href="#About">About</a></li>
+                            <li><a href="#Services">Services</a></li>
+                            <li><a href="#Testimonials">Testimonials</a></li>
+                            <li><a href="#Locations">Locations</a></li>
+                            <li><a href="#Appointment">Appointment</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="col-lg-5 col-md-6">
+                        <h5>Contact Info</h5>
+                        <ul class="f-contact">
+                            <li><i class="bi bi-telephone"></i> +880 1818-410710</li>
+                            <li><i class="bi bi-envelope"></i> doctor@example.com</li>
+                            <li><i class="bi bi-geo-alt"></i> Moon Hospital, Cumilla</li>
+                            <li><i class="bi bi-clock"></i> Sat - Thu: 5 PM - 8 PM</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="f-bottom">
+                    <p>© 2026 Dr. Sheikh Marufuzzaman. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-----------------------------footer end -------------------->
+    </main>
+    <!------------------------ script start ------------------------------>
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/gsap.min.js"></script>
+    <script src="./assets/js/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,728 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --primary: #1547A3;
+    --secondary: #25bd9e;
+    --button: #093279;
+    --bg-light: #e4f1f8;
+    --bg-white: #FFFFFF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul,li,h2,h3,h4,h5,h6,p,span{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: var(--font-body);
+    overflow-x: hidden;
+}
+/* ---------------------- header start-------------------- */
+/* header{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    left: 100;
+} */
+#dr-nav {
+    background-color: var(--bg-white);
+    border-bottom: 1px solid var(--bg-light);
+}
+.doctor-logo{
+    max-width: 55px;
+    max-height: 55px;
+}
+.doctor-name{
+    margin-left: 6px; 
+    
+}
+#dr-nav p{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.0;
+}
+#dr-nav p span{
+    color: var(--secondary);
+    font-weight: 502;
+    font-size: 14px;
+}
+#dr-ul{
+    font-size: 18px;
+    font-weight: 450;
+    padding: 0px 60px;
+}
+#dr-ul li {
+    padding: 0px 8px;
+}
+#dr-ul li .nav-link{
+    position: relative;
+    padding-bottom: 5px;
+    overflow: hidden;
+}
+#dr-ul li .nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    border-bottom: 2px solid var(--secondary);
+    transform: translateX(-100%);
+    transition: 0.4s ease;
+}
+#dr-ul li .nav-link:hover{
+    color: var(--secondary);
+}
+#dr-ul li .nav-link:hover::before{
+    transform: translateX(0);
+}
+button{
+    align-items: center;
+    justify-content: center;
+    padding: 12px 14px;
+    border-radius: 25px;
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--bg-white);
+    background-color: var(--button);
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 0px;
+    transition: 0.4s ease;
+}
+button:hover{
+    background-color: var(--secondary);
+}
+/* ------------------------- header end --------------------- */
+/* ------------------------- Hero section start --------------------- */
+main .hero{
+    background: var(--bg-light);
+    overflow: hidden;
+}
+main .hero h6{
+    color: var(--secondary);
+    margin-top: 40px;
+    font-size: 14px;
+}
+main .hero h6 span{
+    font-size: 30px;
+    padding: 0px 8px;
+}
+main .hero h1{
+    font-weight: 700;
+    font-family: var(--font-heading);
+    padding-top: 14px;
+    color:  #0E2A4A;
+    margin: 0px;
+}
+main .hero .skl{
+    color: var(--secondary);
+    font-weight: 600;
+    font-family: var(--font-body);
+    font-size: 16px;
+}
+main .hero .pos{
+    color: var(--secondary);
+    font-weight: 600;
+    font-family: var(--font-body);
+    font-size: 18px;
+}
+main .hero .sam {
+    padding: 24px 0px;
+    font-size: 16px;
+}
+main .hero .location {
+    gap: 30px;
+    margin: 30px 0px;  
+    margin-bottom: 15%;
+    align-items: center;
+}
+main .hero .location #loc{
+    padding: 12px;
+    font-size: 25px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: #64e1c9;
+    border-radius: 50%;
+    max-width: 54px;
+    max-height: 51px;
+}
+main .hero .location a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-family: var(--font-heading);
+    font-weight: 600;
+}
+main .hero .btn-box button{
+    margin-top: 12px;
+    transition: 0.4s ease;
+}
+main .hero .btn-box button:first-child{
+    background-color: var(--button);
+    border-radius: 15px 15px 15px 15px; 
+    margin-right: 12px;
+}
+main .hero .btn-box button:last-child{
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 13px 30px;
+}
+main .hero .btn-box button:first-child:hover{
+    background-color: var(--secondary);
+}
+main .hero .btn-box button:last-child:hover{
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+main .hero a img{
+    max-width: 86%;
+    max-height: 86%;
+    margin-left: 20%;
+    margin-top: 8%;
+    border-radius: 15px;
+}
+/* ------------------------- Hero section end ----------------------- */
+/* ------------------------- about section start --------------------- */
+main .about a img{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 50px 0px;
+    border-radius: 8px;
+}
+main .about #abo-cont{
+    padding-left: 20px;
+}
+main .about #abo-cont h1{
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+main .about .icon-box{
+    gap: 30px;
+    margin: 30px 0px;  
+    margin-bottom: 12%;
+    
+}
+main .about .icon-box a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-family: var(--font-heading);
+    font-weight: 600;
+}
+main .about .icon-box #icon-dg{
+    padding: 12px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg-white);
+    background-color: var(--secondary);
+    border-radius: 50%;
+    max-width: 54px;
+    max-height: 51px; 
+}
+main .about .icon-box #icon-dg:hover{
+    background-color: var(--primary);
+    transition: 0.3s ease;
+}
+main .about #view{
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 14px;
+    padding: 9px 18px;
+}
+main .about #view #arrow{
+    font-weight: 500;
+    font-size: 25px;
+}
+/* ------------------------- about section end ----------------------- */
+/* ------------------------- sevices section start -------------------- */
+main .services{
+    background-color: var(--bg-light);
+    padding-bottom: 40px;
+}
+main .services .head-text h6 {
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--primary);
+    margin-bottom: 7px;
+    margin-left: 40%;
+    margin-right: 40%;
+    display: inline-block;
+    padding: 5px 14px;
+    background: #b8f1ef;
+    border-radius: 50px;
+    margin-top: 16px;
+}
+main .services .head-text h2{
+    color: var(--secondary);
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+main .services .head-text h2 span{
+    color: var(--primary);
+}
+main .services .head-text p{
+    font-size: 15px;
+    color: black;
+    margin-left: 26%;
+    margin-right: 25%;
+    margin-bottom: 24px;
+}
+main .services .card {
+    height: 100%;
+    padding: 12px;
+    background: #fff;
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(15, 47, 143, 0.08);
+    padding-bottom: 10px;
+}
+main .services .card  a {
+    display: block;
+}
+main .services .card a img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    padding: 0;
+    display: block;
+}
+main .services .card h5 {
+    padding: 16px 8px 0;
+    color: #0f2f8f;
+    font-size: 19px;
+    font-weight: 700;
+}
+main .services .card p {
+    padding: 12px 8px;
+    color: #5b6b8c;
+    font-size: 15px;
+    line-height: 1.6;
+}
+main .services .card .in-box a {
+    margin: auto 0 6px 8px;
+    align-self: flex-start;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    color: #10b5b0;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 10px;
+}
+main .services .card .in-box a:hover {
+    color: #1f41a7;
+}
+/* --------------------------- sevices setion end ----------------------- */
+/* --------------------------- review setion start ---------------------- */
+main .my-re{
+    margin-top: 40px;
+}
+main .my-re h2{
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--primary);
+    padding-left: 10px;
+
+}
+main .my-re h2 span {
+    color: var(--secondary);
+}
+main .my-re p{
+    padding-left: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 8px;
+}
+main .my-patients .review-slider {
+    margin-top: 30px;
+    padding-bottom: 40px;
+}
+main .my-patients .review-item {
+    padding: 14px 14px 20px;
+}
+main .my-patients .review-card {
+    background: #fff !important;
+    border: 1px solid #dbe6f3;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(15, 47, 143, 0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+main .my-patients .review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(15, 47, 143, 0.16);
+}
+main .my-patients .review-card {
+    height: 100%;
+    padding: 24px;
+}
+main .my-patients .review-card #re-video{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+main .my-patients .review-card p {
+    margin: 8px 0 20px;
+    color: #5b6b8c;
+    font-size: 15px;
+    line-height: 1.7;
+    min-height: 100px;
+}
+main .my-patients .patient {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+main .my-patients .patient img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+main .my-patients .patient h6 {
+    margin: 0;
+    color: #0f2f8f;
+    font-size: 15px;
+    font-weight: 700;
+}
+main .my-patients .patient span {
+    color: #7a879f;
+    font-size: 13px;
+}
+main .my-patients .slick-dots {
+    bottom: -10px;
+}
+main .my-patients .slick-dots li {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+}
+main .my-patients .slick-dots li button {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+}
+main .my-patients .slick-dots li button:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #c6d4e8;
+    opacity: 1;
+    top: 1px;
+    left: 1px;
+}
+main .my-patients .slick-dots li.slick-active button:before {
+    background: #10b5b0;
+    opacity: 1;
+}
+/* --------------------------- review section end -------------------------- */
+/* --------------------------- locations section start -------------------------- */
+main .locations {
+    padding: 70px 0;
+}
+main .locations .loc-head {
+    margin-bottom: 40px;
+}
+main .locations .loc-head h6 {
+    color: #5b6b8c;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    display: inline-block;
+    padding: 5px 14px;
+    background: #b8f1ef;
+    border-radius: 50px;
+    margin-top: 16px;
+}
+main .locations .loc-head h2 {
+    color: #0f2f8f;
+    font-size: 32px;
+    font-weight: 700;
+}
+main .locations .loc-head p {
+    color: #5b6b8c;
+    font-size: 15px;
+}
+main .locations .loc-card {
+    background: #fff;
+    border: 1px solid #dbe6f3;
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 24px rgba(15, 47, 143, 0.08);
+}
+main .locations .loc-top {
+    display: flex;
+    gap: 14px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e3ebf5;
+}
+main .locations .loc-top i {
+    color: #0f2f8f;
+    font-size: 24px;
+}
+main .locations .loc-top h4 {
+    color: #0f2f8f;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+main .locations .loc-top p {
+    margin: 0 0 4px;
+    color: #333;
+    font-size: 15px;
+}
+main .locations .loc-top span {
+    color: #10a3a0;
+    font-size: 15px;
+}
+main .locations .loc-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+}
+main .locations .loc-bottom h6 {
+    margin: 0 0 4px;
+    color: #0f2f8f;
+    font-size: 15px;
+    font-weight: 700;
+}
+main .locations .loc-bottom p {
+    margin: 0;
+    color: #333;
+    font-size: 15px;
+}
+main .locations .loc-link {
+    color: #0f2f8f;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+main .locations .loc-link:hover {
+    transform: translateX(4px);
+}
+main .locations .loc-map {
+    height: 100%;
+    min-height: 380px;
+    border: 1px solid #dbe6f3;
+    border-radius: 14px;
+    overflow: hidden;
+}
+main .locations .loc-map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    border: 0;
+    display: block;
+}
+/* ----------------------------- locations section end ------------------------ */
+main .appointment {
+    padding: 70px 0;
+    background: linear-gradient(120deg, #eaf6f1 0%, #f4faf8 50%, #eef5fb 100%);
+}
+main .appointment .apt-badge {
+    display: inline-block;
+    padding: 5px 14px;
+    background: #dcefee;
+    color: #3b8f8a;
+    font-size: 13px;
+    border-radius: 50px;
+    margin-bottom: 16px;
+}
+main .appointment h2 {
+    color: #0f2a5c;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 14px;
+}
+main .appointment p {
+    color: #5b6b8c;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+main .appointment .secure {
+    color: #5b6b8c;
+    font-size: 14px;
+}
+main .appointment .secure i {
+    color: #10a38f;
+    font-size: 20px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+main .appointment .apt-card {
+    padding: 26px;
+    background: #fff;
+    border: 1px solid #e3ebf5;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(15, 47, 143, 0.08);
+}
+main .appointment .apt-card label {
+    display: block;
+    margin-bottom: 6px;
+    color: #222;
+    font-size: 13px;
+    font-weight: 600;
+}
+main .appointment .apt-card label b {
+    color: #e04848;
+}
+main .appointment .apt-card input,
+main .appointment .apt-card select,
+main .appointment .apt-card textarea {
+    width: 100%;
+    padding: 10px 12px;
+    background: #fff;
+    border: 1px solid #d5deea;
+    border-radius: 8px;
+    color: #333;
+    font-size: 14px;
+    outline: none;
+}
+main .appointment .apt-card input:focus,
+main .appointment .apt-card select:focus,
+main .appointment .apt-card textarea:focus {
+    border-color: #0f3a8a;
+    box-shadow: 0 0 0 3px rgba(15, 58, 138, 0.10);
+}
+main .appointment .apt-submit {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #0f3a7a;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+main .appointment .apt-submit:hover {
+    background: #0a2a5c;
+}
+/* ---------------------------- footer start --------------------------  */
+.footer {
+    padding: 60px 0 0;
+    background: #0b2a5b;
+    color: #c9d6ea;
+}
+.footer .f-logo {
+    margin: 0 0 4px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+}
+.footer .f-role {
+    display: block;
+    margin-bottom: 14px;
+    color: #2ed3b7;
+    font-size: 14px;
+}
+.footer p {
+    color: #c9d6ea;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.footer h5 {
+    margin-bottom: 18px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+}
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.footer ul li a {
+    color: #c9d6ea;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.footer ul li a:hover {
+    color: #2ed3b7;
+    padding-left: 5px;
+}
+.footer .f-contact i {
+    margin-right: 10px;
+    color: #2ed3b7;
+}
+.footer .f-social {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+.footer .f-social a {
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: background 0.3s ease;
+}
+.footer .f-social a:hover {
+    background: #2ed3b7;
+}
+.footer .f-bottom {
+    margin-top: 40px;
+    padding: 18px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    text-align: center;
+}
+.footer .f-bottom p {
+    margin: 0;
+    font-size: 13px;
+}
+/* ----------------------------- footer end ---------------------------------- */
